@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    h1{
+        color: teal;
+        margin: 50px 450px ;
+    }
+
+    #reset{
+        margin: 50px 450px ;
+        padding: 1.5rem;
+        width: 100px;
+        border: none;
+        border-radius: 15px;
+        background-color: blue;
+        color: black;
+    }
+  
+    .cell {
+    
+      width: 100px;
+      height: 100px;
+      background-color: #eb1f1f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  
+  <div class="board">
+
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    
+  </div>
+  
+  <button id="reset">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
